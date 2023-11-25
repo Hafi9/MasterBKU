@@ -48,6 +48,36 @@ $routes->get('/laporan/edit/(:num)', 'LaporanPerjalananDinasController::edit/$1'
 $routes->post('/laporan/edit/(:num)', 'LaporanPerjalananDinasController::edit/$1');
 $routes->get('/laporan/delete/(:num)', 'LaporanPerjalananDinasController::delete/$1');
 
+//Perjalanan Dinas
+$routes->group('perjalanan_dinas', ['namespace' => 'App\Controllers'], function ($routes) {
+    $routes->get('/', 'PerjalananDinasController::index');
+    $routes->get('create', 'PerjalananDinasController::create');
+    $routes->post('create', 'PerjalananDinasController::create');
+    $routes->get('edit/(:num)', 'PerjalananDinasController::edit/$1');
+    $routes->post('edit/(:num)', 'PerjalananDinasController::edit/$1');
+    $routes->get('delete/(:num)', 'PerjalananDinasController::delete/$1');
+});
+
+//Bagian DPRD
+$routes->group('bagian_dprd', ['namespace' => 'App\Controllers'], function ($routes) {
+    $routes->get('/', 'BagianDPRDController::index');
+    $routes->get('create', 'BagianDPRDController::create');
+    $routes->post('create', 'BagianDPRDController::create');
+    $routes->get('edit/(:num)', 'BagianDPRDController::edit/$1');
+    $routes->post('edit/(:num)', 'BagianDPRDController::edit/$1');
+    $routes->get('delete/(:num)', 'BagianDPRDController::delete/$1');
+});
+
+//Pengiriman Uang
+$routes->group('pengiriman_uang', ['namespace' => 'App\Controllers'], function ($routes) {
+    $routes->get('/', 'PengirimanUangController::index');
+    $routes->get('create', 'PengirimanUangController::create');
+    $routes->post('create', 'PengirimanUangController::create');
+    // Tambahkan rute lainnya seperti edit, delete, dll.
+});
+
+
+
 
 
 

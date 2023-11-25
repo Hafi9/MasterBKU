@@ -226,20 +226,26 @@
               </li>
               <li class="nav-item">
                 <a href="<?= site_url('user') ?>" class="nav-link">
-                    <i class="nav-icon fas fa-city"></i>
+                    <i class="nav-icon fas fa-user"></i>
                     <p>Data user</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="<?= site_url('bbm') ?>" class="nav-link">
-                    <i class="nav-icon fas fa-city"></i>
-                    <p>Data Kota dan BBM</p>
+                <a href="<?= site_url('bagian_dprd') ?>" class="nav-link">
+                    <i class="nav-icon fas fa-building"></i>
+                    <p>Data Bagian</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="<?= site_url('nama_pelaksana') ?>" class="nav-link">
-                    <i class="nav-icon fas fa-city"></i>
-                    <p>Data Pelaksana Perdin</p>
+                <a href="<?= site_url('pengiriman_uang') ?>" class="nav-link">
+                    <i class="nav-icon fas fa-paper-plane"></i>
+                    <p>Data Keuangan</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="<?= site_url('bbm') ?>" class="nav-link">
+                    <i class="nav-icon fas  fa-map-marker"></i>
+                    <p>Data Kota dan BBM</p>
                 </a>
               </li>
             </ul>
@@ -255,8 +261,31 @@
             <ul class="nav nav-treeview">
               <li class="nav-item">
                 <a href="<?= site_url('laporan') ?>" class="nav-link">
-                    <i class="nav-icon fas fa-users"></i>
+                    <i class="nav-icon fas fa-tasks"></i>
                     <p>Data Laporan Perdin</p>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <i class="nav-icon fa fa-database"></i>
+              <p>
+                Data Perjalanan Dinas
+                <i class="fas fa-angle-left right"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="<?= site_url('perjalanan_dinas') ?>" class="nav-link">
+                    <i class="nav-icon fas fa-tasks"></i>
+                    <p>Data Perdin</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="<?= site_url('nama_pelaksana') ?>" class="nav-link">
+                    <i class="nav-icon fas fa-suitcase"></i>
+                    <p>Data Pelaksana Perdin</p>
                 </a>
               </li>
             </ul>
